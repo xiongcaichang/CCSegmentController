@@ -8,7 +8,7 @@
 
 #import "XCSegmentController.h"
 #import "XCPagerItem.h"
-#import "TestTableController.h"
+
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define SELECTED_COLOR [UIColor redColor]
@@ -63,8 +63,8 @@
     for (int i = 0; i < self.titleArr.count; i++) {
         UIButton *itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [itemButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        [itemButton setTitleColor:SELECTED_COLOR forState:UIControlStateSelected];
         [itemButton setTitle:_titleArr[i] forState:UIControlStateNormal];
+//        [itemButton setTitleColor:SELECTED_COLOR forState:UIControlStateSelected];
         [itemButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
         itemButton.frame = CGRectMake(itemW*i, 0, itemW, KTitleH);
         itemButton.tag = i;
@@ -75,7 +75,6 @@
     }
 
     //添加滑块
-
     UIView *sliderV=[[UIView alloc]initWithFrame:CGRectMake(0, KTitleH-2, itemW, 2)];
     sliderV.backgroundColor=SELECTED_COLOR;
     [self.titleWrap addSubview:sliderV];
@@ -139,7 +138,7 @@
 
 //选中按钮的处理
 -(void)selectButton:(NSInteger )index{
-    //去下选中上一个
+    //取消选中上一个
     [self.itemArr[self.oldSelectedIndex] setSelected:NO];
     //选中当前
     [self.itemArr[index] setSelected:YES];
@@ -173,14 +172,13 @@
 
     UITableViewController *tableVc = self.controllerArr[indexPath.item];
 
-    tableVc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
 
     //判断是否有导航栏来确定内容的高度
     if (self.navigationController.navigationBar) {
 
         tableVc.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-KTitleH);
     }else{
-        tableVc.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        tableVc.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-KTitleH);
     }
     cell.content = tableVc.view;
 
