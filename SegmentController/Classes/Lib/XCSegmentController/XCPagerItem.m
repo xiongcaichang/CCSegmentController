@@ -8,13 +8,22 @@
 
 #import "XCPagerItem.h"
 
+@interface XCPagerItem ()
+
+@property (nonatomic, weak) UIView *oldContent;
+
+
+@end
+
 @implementation XCPagerItem
 
 -(void)setContent:(UIView *)content{
     _content=content;
 
-
-//    content.frame=self.bounds;
+    [self.oldContent removeFromSuperview];
     [self.contentView addSubview:content];
+    self.oldContent=content;
+
+
 }
 @end

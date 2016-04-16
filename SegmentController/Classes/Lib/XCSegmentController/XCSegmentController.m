@@ -15,6 +15,9 @@
 
 #define KTitleH 30
 
+
+static NSString *ID=@"pager";
+
 @interface XCSegmentController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UIView *titleWrap;
@@ -46,10 +49,13 @@
     _titleArr = titleArr;
 
     [self initTitleWrap];
-    [self initPagerContainer];
+
 }
 
-
+-(void)setControllerArr:(NSArray *)controllerArr{
+    _controllerArr=controllerArr;
+     [self initPagerContainer];
+}
 
 -(void)initTitleWrap{
     CGFloat itemW = (CGFloat)SCREEN_WIDTH/_titleArr.count;
@@ -104,7 +110,7 @@
     collectionView.bounces = NO;
     collectionView.backgroundColor=[UIColor whiteColor];
     collectionView.showsVerticalScrollIndicator=YES;
-    [collectionView registerClass:[XCPagerItem class] forCellWithReuseIdentifier:@"pager"];
+    [collectionView registerClass:[XCPagerItem class] forCellWithReuseIdentifier:ID];
     
     
 }
@@ -168,7 +174,7 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 
-     XCPagerItem  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"pager" forIndexPath:indexPath];
+     XCPagerItem  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
 
     UITableViewController *tableVc = self.controllerArr[indexPath.item];
 
