@@ -109,7 +109,7 @@ static NSString *ID=@"pager";
     collectionView.pagingEnabled = YES;
     collectionView.bounces = NO;
     collectionView.backgroundColor=[UIColor whiteColor];
-    collectionView.showsVerticalScrollIndicator=YES;
+    collectionView.showsVerticalScrollIndicator=NO;
     [collectionView registerClass:[CCPagerItem class] forCellWithReuseIdentifier:ID];
     
     

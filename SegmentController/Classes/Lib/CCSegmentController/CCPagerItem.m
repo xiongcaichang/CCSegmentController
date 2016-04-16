@@ -10,19 +10,16 @@
 
 @interface CCPagerItem ()
 
-@property (nonatomic, weak) UIView *oldContent;
-
-
 @end
 
 @implementation CCPagerItem
 
 -(void)setContent:(UIView *)content{
     _content=content;
-
-    [self.oldContent removeFromSuperview];
+    
+    [self.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.contentView addSubview:content];
-    self.oldContent=content;
+
 
 
 }
