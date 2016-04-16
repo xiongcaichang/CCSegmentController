@@ -6,8 +6,8 @@
 //  Copyright © 2016年 bear. All rights reserved.
 //
 
-#import "XCSegmentController.h"
+#import "CCSegmentController.h"
 
-@interface MySegmentController : XCSegmentController
+@interface MySegmentController : CCSegmentController
 
 @end

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XCTabBar.h"
+#import "CCTabBar.h"
 
-//#define  XCTabBarNotifacationIsHiden @"XCTabBarHiden"
+//#define  CCTabBarNotifacationIsHiden @"CCTabBarHiden"
 
 //
 //@"VC": [[TableController alloc]init],
@@ -27,10 +27,10 @@
 #define TITLE @"TITLE"
 
 
-@interface XCNavTabController :UITabBarController{
+@interface CCNavTabController :UITabBarController{
     @public
 
-    XCTabBar *_tabBar;
+    CCTabBar *_tabBar;
 }
 
 

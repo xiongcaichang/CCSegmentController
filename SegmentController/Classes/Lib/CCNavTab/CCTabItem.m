@@ -6,7 +6,7 @@
 //  Copyright © 2015年 bear. All rights reserved.
 //
 
-#import "XCTabItem.h"
+#import "CCTabItem.h"
 
 #define kDockItemSelectedBG @"tabbar_slider.png"
 
@@ -14,7 +14,7 @@
 #define kTitleRatio 0.3
 
 
-@implementation XCTabItem
+@implementation CCTabItem
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

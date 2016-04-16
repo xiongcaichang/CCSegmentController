@@ -1,23 +1,23 @@
 //
-//  XCNavigationController.m
+//  CCNavigationController.m
 //  hedaAssistant
 //
 //  Created by bear on 16/3/24.
 //  Copyright © 2016年 bear. All rights reserved.
 //
 
-#import "XCNavigationController.h"
+#import "CCNavigationController.h"
 //#import "UINavigationItem+custom.h"
 //#import "UIBarButtonItem+Create.h"
 
 
-#define  XCTabBarNotifacationIsHiden @"XCTabBarHiden"
+#define  CCTabBarNotifacationIsHiden @"CCTabBarHiden"
 
-@interface XCNavigationController ()<UINavigationControllerDelegate>
+@interface CCNavigationController ()<UINavigationControllerDelegate>
 @property (nonatomic, strong) id popDelegate;
 @end
 
-@implementation XCNavigationController
+@implementation CCNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

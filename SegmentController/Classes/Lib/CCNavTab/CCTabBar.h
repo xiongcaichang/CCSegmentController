@@ -7,32 +7,32 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XCTabItem.h"
+#import "CCTabItem.h"
 
 #define kTabBarHeight 49
 
-@class XCTabBar;
+@class CCTabBar;
 
 
 
-@protocol XCTabBarDelegate <NSObject>
+@protocol CCTabBarDelegate <NSObject>
 
 @optional
--(void)tabbar:(XCTabBar *)tabbar to:(NSInteger)to;
+-(void)tabbar:(CCTabBar *)tabbar to:(NSInteger)to;
 
 @end
 
 
 
 
-@interface XCTabBar : UIView
+@interface CCTabBar : UIView
 
-@property (nonatomic, weak) XCTabItem *selectedItem;
+@property (nonatomic, weak) CCTabItem *selectedItem;
 
 //添加tab按钮的方法
 -(void)addItemWithIcon:(NSString *)icon  selectedIcon:(NSString *)icon_selected title:(NSString *)title;
 
-@property (nonatomic,weak) id<XCTabBarDelegate> delegate;
+@property (nonatomic,weak) id<CCTabBarDelegate> delegate;
 
 @end
 

@@ -6,19 +6,19 @@
 //  Copyright © 2015年 bear. All rights reserved.
 //
 
-#import "XCNavTabController.h"
+#import "CCNavTabController.h"
 //#import "TableController.h"
 //#import "NewsController.h"
 //#import "MeController.h"
-#import "XCNavigationController.h"
-#import "XCSegmentController.h"
+#import "CCNavigationController.h"
+#import "CCSegmentController.h"
 
 
-@interface XCNavTabController ()<XCTabBarDelegate>
+@interface CCNavTabController ()<CCTabBarDelegate>
 
 @end
 
-@implementation XCNavTabController
+@implementation CCNavTabController
 
 - (void)viewDidLoad
 
@@ -44,7 +44,7 @@
 - (void)addTabBar
 {
     
-    XCTabBar *tabBar = [[XCTabBar alloc] initWithFrame:self.tabBar.bounds];
+    CCTabBar *tabBar = [[CCTabBar alloc] initWithFrame:self.tabBar.bounds];
 
     tabBar.delegate=self;
     [self.tabBar addSubview:tabBar];
@@ -65,7 +65,7 @@
 
     // 删除self.tabBar中的子控件除了自定义tabBar
     for (UIView *childView in self.tabBar.subviews) {
-        if (![childView isKindOfClass:[XCTabBar class]]) { // 不是自己的tabBar
+        if (![childView isKindOfClass:[CCTabBar class]]) { // 不是自己的tabBar
 
             [childView removeFromSuperview];
         }
@@ -78,7 +78,7 @@
 }
 
 #pragma mark dock的代理方法
-- (void)tabbar:(XCTabBar *)tabbar to:(NSInteger)to{
+- (void)tabbar:(CCTabBar *)tabbar to:(NSInteger)to{
 
 
     //
@@ -116,7 +116,7 @@
 
         //添加控制器
         NSDictionary *dict=childControllerAndIconArr[i];
-        XCNavigationController *nav=[[XCNavigationController alloc]initWithRootViewController:dict[@"VC"]];
+        CCNavigationController *nav=[[CCNavigationController alloc]initWithRootViewController:dict[@"VC"]];
         [self addChildViewController:nav];
 
         //添加字典

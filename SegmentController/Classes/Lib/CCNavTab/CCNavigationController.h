@@ -1,5 +1,5 @@
 //
-//  XCNavigationController.h
+//  CCNavigationController.h
 //  hedaAssistant
 //
 //  Created by bear on 16/3/24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCNavigationController : UINavigationController
+@interface CCNavigationController : UINavigationController
 
 @end

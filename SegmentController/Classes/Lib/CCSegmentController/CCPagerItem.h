@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCPagerItem : UICollectionViewCell
+@interface CCPagerItem : UICollectionViewCell
 
 
 @property (nonatomic, weak) UIView *content;

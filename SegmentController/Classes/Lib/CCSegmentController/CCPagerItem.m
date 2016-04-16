@@ -6,15 +6,24 @@
 //  Copyright © 2016年 bear. All rights reserved.
 //
 
-#import "XCPagerItem.h"
+#import "CCPagerItem.h"
 
-@implementation XCPagerItem
+@interface CCPagerItem ()
+
+@property (nonatomic, weak) UIView *oldContent;
+
+
+@end
+
+@implementation CCPagerItem
 
 -(void)setContent:(UIView *)content{
     _content=content;
 
-
-//    content.frame=self.bounds;
+    [self.oldContent removeFromSuperview];
     [self.contentView addSubview:content];
+    self.oldContent=content;
+
+
 }
 @end

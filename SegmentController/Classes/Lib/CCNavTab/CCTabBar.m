@@ -6,15 +6,15 @@
 //  Copyright © 2015年 bear. All rights reserved.
 //
 
-#import "XCTabBar.h"
-#import "XCTabItem.h"
+#import "CCTabBar.h"
+#import "CCTabItem.h"
 
-@implementation XCTabBar
+@implementation CCTabBar
 
 - (void)addItemWithIcon:(NSString *)icon selectedIcon:(NSString *)selected title:(NSString *)title
 {
     // 1.创建item
-    XCTabItem *item = [[XCTabItem alloc] init];
+    CCTabItem *item = [[CCTabItem alloc] init];
 
     // 文字
     [item setTitle:title forState:UIControlStateNormal];
@@ -40,14 +40,14 @@
     CGFloat height = self.frame.size.height; // 高度
     CGFloat width = self.frame.size.width / count; // 宽度
     for (int i = 0; i<count; i++) {
-        XCTabItem *tabItem = self.subviews[i];
+        CCTabItem *tabItem = self.subviews[i];
         tabItem .tag = i; // 绑定标记
         tabItem .frame = CGRectMake(width * i, 0, width, height);
     }
 }
 
 #pragma mark 监听item点击
-- (void)itemClick:(XCTabItem *)item
+- (void)itemClick:(CCTabItem *)item
 {
 
 

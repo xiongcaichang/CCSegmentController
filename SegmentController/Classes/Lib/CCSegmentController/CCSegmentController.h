@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCSegmentController : UIViewController
+@interface CCSegmentController : UIViewController
 
 @property (nonatomic, strong) NSArray *titleArr;
 @property (nonatomic, strong) NSArray *controllerArr;

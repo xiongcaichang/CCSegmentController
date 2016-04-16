@@ -6,8 +6,8 @@
 //  Copyright © 2016年 bear. All rights reserved.
 //
 
-#import "XCSegmentController.h"
-#import "XCPagerItem.h"
+#import "CCSegmentController.h"
+#import "CCPagerItem.h"
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -18,7 +18,7 @@
 
 static NSString *ID=@"pager";
 
-@interface XCSegmentController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface CCSegmentController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UIView *titleWrap;
 
@@ -37,7 +37,7 @@ static NSString *ID=@"pager";
 
 @end
 
-@implementation XCSegmentController
+@implementation CCSegmentController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -110,7 +110,7 @@ static NSString *ID=@"pager";
     collectionView.bounces = NO;
     collectionView.backgroundColor=[UIColor whiteColor];
     collectionView.showsVerticalScrollIndicator=YES;
-    [collectionView registerClass:[XCPagerItem class] forCellWithReuseIdentifier:ID];
+    [collectionView registerClass:[CCPagerItem class] forCellWithReuseIdentifier:ID];
     
     
 }
@@ -174,7 +174,7 @@ static NSString *ID=@"pager";
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 
-     XCPagerItem  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+     CCPagerItem  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
 
     UITableViewController *tableVc = self.controllerArr[indexPath.item];
 

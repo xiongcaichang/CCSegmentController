@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCTabItem : UIButton
+@interface CCTabItem : UIButton
 
 @end

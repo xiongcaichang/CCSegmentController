@@ -6,9 +6,9 @@
 //  Copyright © 2016年 bear. All rights reserved.
 //
 
-#import "XCNavTabController.h"
+#import "CCNavTabController.h"
 
 
-@interface MainController :XCNavTabController
+@interface MainController :CCNavTabController
 
 @end
