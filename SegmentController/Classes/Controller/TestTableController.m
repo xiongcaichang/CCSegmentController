@@ -20,6 +20,7 @@
 
 
     self.tableView.tableFooterView=[[UITableViewHeaderFooterView alloc]init];
+    self.tableView.showsVerticalScrollIndicator=NO;
 
 
 }

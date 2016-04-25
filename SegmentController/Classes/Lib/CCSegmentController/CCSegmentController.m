@@ -54,6 +54,7 @@ static NSString *ID=@"pager";
 
 -(void)setControllerArr:(NSArray *)controllerArr{
     _controllerArr=controllerArr;
+    
      [self initPagerContainer];
 }
 
@@ -61,14 +62,14 @@ static NSString *ID=@"pager";
     CGFloat itemW = (CGFloat)SCREEN_WIDTH/_titleArr.count;
     //标题容器
     UIView *titleWrap = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, KTitleH)];
-    titleWrap.backgroundColor = [UIColor grayColor];
+    titleWrap.backgroundColor = [UIColor colorWithRed:237/255.0 green:237/255.0 blue:237/255.0 alpha:1];
     [self.view addSubview:titleWrap];
     _titleWrap = titleWrap;
 
     _itemArr = [NSMutableArray array];
     for (int i = 0; i < self.titleArr.count; i++) {
         UIButton *itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [itemButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [itemButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [itemButton setTitle:_titleArr[i] forState:UIControlStateNormal];
 //        [itemButton setTitleColor:SELECTED_COLOR forState:UIControlStateSelected];
         [itemButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
@@ -150,13 +151,15 @@ static NSString *ID=@"pager";
     [self.itemArr[index] setSelected:YES];
 
     CGFloat itemW = (CGFloat)SCREEN_WIDTH/_titleArr.count;
-    [UIView animateWithDuration:0.2 animations:^{
 
+
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.sliderView.frame=CGRectMake(itemW*index, KTitleH-2, itemW, 2);
-        [[self.itemArr[_oldSelectedIndex] titleLabel] setFont:[UIFont systemFontOfSize:14]];
-        [[self.itemArr[index] titleLabel] setFont:[UIFont systemFontOfSize:20]];
-    }];
+        [[self.itemArr[_oldSelectedIndex] titleLabel] setFont:[UIFont systemFontOfSize:16]];
+        [[self.itemArr[index] titleLabel] setFont:[UIFont systemFontOfSize:16]];
+    } completion:^(BOOL finished) {
 
+    }];
     
     //记录当前选中
     self.oldSelectedIndex = index;

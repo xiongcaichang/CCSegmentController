@@ -23,13 +23,7 @@
                                          NORMAL_ICON : @"icon_classTable",                 //正常状态的Icon 名称
                                          SELECTED_ICON : @"icon_classTable_selected",       //选中状态的Icon 名称
                                          TITLE : @"表"                                       //Nav和Tab的标题
-                                         },
-                                     @{
-                                         VIEWCONTROLLER : [[MySegmentController alloc]init],  //控制器
-                                         NORMAL_ICON : @"icon_classTable",                 //正常状态的Icon 名称
-                                         SELECTED_ICON : @"icon_classTable_selected",       //选中状态的Icon 名称
-                                         TITLE : @"表"                                       //Nav和Tab的标题
-                                         },
+                                         }
                                      ];
 
 }
