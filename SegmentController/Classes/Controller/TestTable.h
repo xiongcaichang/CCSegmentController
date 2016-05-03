@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestTable : UITableView
+@interface TestTable : UITableView<UITableViewDataSource,UITabBarDelegate>
 
 @end

@@ -72,7 +72,7 @@ static NSString *ID=@"pager";
         [itemButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [itemButton setTitle:_titleArr[i] forState:UIControlStateNormal];
 //        [itemButton setTitleColor:SELECTED_COLOR forState:UIControlStateSelected];
-        [itemButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        [itemButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         itemButton.frame = CGRectMake(itemW*i, 0, itemW, KTitleH);
         itemButton.tag = i;
         [itemButton addTarget:self action:@selector(scrollToSelectedIndex:) forControlEvents:UIControlEventTouchUpInside];
@@ -147,6 +147,7 @@ static NSString *ID=@"pager";
 -(void)selectButton:(NSInteger )index{
     //取消选中上一个
     [self.itemArr[self.oldSelectedIndex] setSelected:NO];
+
     //选中当前
     [self.itemArr[index] setSelected:YES];
 
@@ -155,7 +156,7 @@ static NSString *ID=@"pager";
 
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.sliderView.frame=CGRectMake(itemW*index, KTitleH-2, itemW, 2);
-        [[self.itemArr[_oldSelectedIndex] titleLabel] setFont:[UIFont systemFontOfSize:16]];
+        [[self.itemArr[_oldSelectedIndex] titleLabel] setFont:[UIFont systemFontOfSize:15]];
         [[self.itemArr[index] titleLabel] setFont:[UIFont systemFontOfSize:16]];
     } completion:^(BOOL finished) {
 
