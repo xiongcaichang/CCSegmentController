@@ -7,7 +7,7 @@
 //
 
 #import "MySegmentController.h"
-#import "TestTableController.h"
+#import "TestTable.h"
 
 @interface MySegmentController ()
 
@@ -20,14 +20,14 @@
 
     self.titleArr = @[@"首页",@"小说",@"视频",@"旅游",@"文化"];
 
-    TestTableController *tb1=[[TestTableController alloc]init];
-    TestTableController *tb2=[[TestTableController alloc]init];
-    TestTableController *tb3=[[TestTableController alloc]init];
-    TestTableController *tb4=[[TestTableController alloc]init];
-    TestTableController *tb5=[[TestTableController alloc]init];
+    TestTable  *tb1=[[TestTable  alloc]init];
+    TestTable  *tb2=[[TestTable  alloc]init];
+    TestTable  *tb3=[[TestTable  alloc]init];
+    TestTable  *tb4=[[TestTable  alloc]init];
+    TestTable  *tb5=[[TestTable  alloc]init];
 
 
-    self.controllerArr = @[tb1,tb2,tb3,tb4,tb5];
+    self.tableViewArr = @[tb1,tb2,tb3,tb4,tb5];
 
 }
 

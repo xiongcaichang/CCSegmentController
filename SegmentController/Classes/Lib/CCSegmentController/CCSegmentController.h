@@ -11,5 +11,5 @@
 @interface CCSegmentController : UIViewController
 
 @property (nonatomic, strong) NSArray *titleArr;
-@property (nonatomic, strong) NSArray *controllerArr;
+@property (nonatomic, strong) NSArray *tableViewArr;
 @end

@@ -52,8 +52,8 @@ static NSString *ID=@"pager";
 
 }
 
--(void)setControllerArr:(NSArray *)controllerArr{
-    _controllerArr=controllerArr;
+-(void)setTableViewArr:(NSArray *)tableViewArr{
+    _tableViewArr=tableViewArr;
     
      [self initPagerContainer];
 }
@@ -69,7 +69,7 @@ static NSString *ID=@"pager";
     _itemArr = [NSMutableArray array];
     for (int i = 0; i < self.titleArr.count; i++) {
         UIButton *itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [itemButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [itemButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [itemButton setTitle:_titleArr[i] forState:UIControlStateNormal];
 //        [itemButton setTitleColor:SELECTED_COLOR forState:UIControlStateSelected];
         [itemButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
@@ -170,7 +170,7 @@ static NSString *ID=@"pager";
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.controllerArr.count;
+    return self.tableViewArr.count;
 }
 
 
@@ -179,17 +179,22 @@ static NSString *ID=@"pager";
 
      CCPagerItem  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
 
-    UITableViewController *tableVc = self.controllerArr[indexPath.item];
+    UITableView *tableV = self.tableViewArr[indexPath.item];
+
+
+
 
 
     //判断是否有导航栏来确定内容的高度
     if (self.navigationController.navigationBar) {
 
-        tableVc.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-KTitleH);
+        tableV.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-KTitleH);
     }else{
-        tableVc.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-KTitleH);
+       tableV.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-KTitleH);
     }
-    cell.content = tableVc.view;
+
+    tableV.backgroundColor=[UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+    cell.content = tableV;
 
     return cell;
 

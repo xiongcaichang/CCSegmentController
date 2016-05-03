@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0906C53F1CD84C3900BE4CAB /* TitleContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0906C53E1CD84C3900BE4CAB /* TitleContainer.m */; };
+		0906C5421CD84D0F00BE4CAB /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0906C5411CD84D0F00BE4CAB /* TitleCell.m */; };
 		090A81991CC2A052002F6EE2 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A818B1CC2A052002F6EE2 /* UIColor+Extension.m */; };
 		090A819A1CC2A052002F6EE2 /* CCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A818D1CC2A052002F6EE2 /* CCNavigationController.m */; };
 		090A819B1CC2A052002F6EE2 /* CCNavTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A818F1CC2A052002F6EE2 /* CCNavTabController.m */; };
@@ -14,17 +16,21 @@
 		090A819D1CC2A052002F6EE2 /* CCTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A81931CC2A052002F6EE2 /* CCTabItem.m */; };
 		090A819E1CC2A052002F6EE2 /* CCPagerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A81961CC2A052002F6EE2 /* CCPagerItem.m */; };
 		090A819F1CC2A052002F6EE2 /* CCSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A81981CC2A052002F6EE2 /* CCSegmentController.m */; };
+		095F193F1CD1F9B000DFA6E7 /* TestTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F193E1CD1F9B000DFA6E7 /* TestTable.m */; };
 		098375091CC09165008ED024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 098375081CC09165008ED024 /* main.m */; };
 		098375121CC09165008ED024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098375101CC09165008ED024 /* Main.storyboard */; };
 		098375141CC09165008ED024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098375131CC09165008ED024 /* Assets.xcassets */; };
 		098375171CC09165008ED024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098375151CC09165008ED024 /* LaunchScreen.storyboard */; };
 		098375AD1CC24DC9008ED024 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 098375A41CC24DC9008ED024 /* AppDelegate.m */; };
 		098375B31CC24E3D008ED024 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098375B21CC24E3D008ED024 /* MainController.m */; };
-		09989EBF1CC2509400644C0A /* TestTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09989EBE1CC2509400644C0A /* TestTableController.m */; };
 		09989EC21CC250AF00644C0A /* MySegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09989EC11CC250AF00644C0A /* MySegmentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0906C53D1CD84C3900BE4CAB /* TitleContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleContainer.h; sourceTree = "<group>"; };
+		0906C53E1CD84C3900BE4CAB /* TitleContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleContainer.m; sourceTree = "<group>"; };
+		0906C5401CD84D0F00BE4CAB /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		0906C5411CD84D0F00BE4CAB /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		090A818A1CC2A052002F6EE2 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		090A818B1CC2A052002F6EE2 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		090A818C1CC2A052002F6EE2 /* CCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNavigationController.h; sourceTree = "<group>"; };
@@ -39,6 +45,8 @@
 		090A81961CC2A052002F6EE2 /* CCPagerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPagerItem.m; sourceTree = "<group>"; };
 		090A81971CC2A052002F6EE2 /* CCSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegmentController.h; sourceTree = "<group>"; };
 		090A81981CC2A052002F6EE2 /* CCSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSegmentController.m; sourceTree = "<group>"; };
+		095F193D1CD1F9B000DFA6E7 /* TestTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTable.h; sourceTree = "<group>"; };
+		095F193E1CD1F9B000DFA6E7 /* TestTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTable.m; sourceTree = "<group>"; };
 		098375041CC09165008ED024 /* SegmentController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098375081CC09165008ED024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		098375111CC09165008ED024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,8 +57,6 @@
 		098375A41CC24DC9008ED024 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		098375B11CC24E3D008ED024 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		098375B21CC24E3D008ED024 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
-		09989EBD1CC2509400644C0A /* TestTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableController.h; sourceTree = "<group>"; };
-		09989EBE1CC2509400644C0A /* TestTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableController.m; sourceTree = "<group>"; };
 		09989EC01CC250AF00644C0A /* MySegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentController.h; sourceTree = "<group>"; };
 		09989EC11CC250AF00644C0A /* MySegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySegmentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +104,10 @@
 				090A81961CC2A052002F6EE2 /* CCPagerItem.m */,
 				090A81971CC2A052002F6EE2 /* CCSegmentController.h */,
 				090A81981CC2A052002F6EE2 /* CCSegmentController.m */,
+				0906C53D1CD84C3900BE4CAB /* TitleContainer.h */,
+				0906C53E1CD84C3900BE4CAB /* TitleContainer.m */,
+				0906C5401CD84D0F00BE4CAB /* TitleCell.h */,
+				0906C5411CD84D0F00BE4CAB /* TitleCell.m */,
 			);
 			path = CCSegmentController;
 			sourceTree = "<group>";
@@ -152,12 +162,12 @@
 		0983758F1CC24DC9008ED024 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				09989EBD1CC2509400644C0A /* TestTableController.h */,
-				09989EBE1CC2509400644C0A /* TestTableController.m */,
 				098375B11CC24E3D008ED024 /* MainController.h */,
 				098375B21CC24E3D008ED024 /* MainController.m */,
 				09989EC01CC250AF00644C0A /* MySegmentController.h */,
 				09989EC11CC250AF00644C0A /* MySegmentController.m */,
+				095F193D1CD1F9B000DFA6E7 /* TestTable.h */,
+				095F193E1CD1F9B000DFA6E7 /* TestTable.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,17 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0906C53F1CD84C3900BE4CAB /* TitleContainer.m in Sources */,
 				098375B31CC24E3D008ED024 /* MainController.m in Sources */,
 				090A819F1CC2A052002F6EE2 /* CCSegmentController.m in Sources */,
 				090A819A1CC2A052002F6EE2 /* CCNavigationController.m in Sources */,
 				090A819B1CC2A052002F6EE2 /* CCNavTabController.m in Sources */,
 				090A819E1CC2A052002F6EE2 /* CCPagerItem.m in Sources */,
 				090A81991CC2A052002F6EE2 /* UIColor+Extension.m in Sources */,
+				0906C5421CD84D0F00BE4CAB /* TitleCell.m in Sources */,
 				098375AD1CC24DC9008ED024 /* AppDelegate.m in Sources */,
 				098375091CC09165008ED024 /* main.m in Sources */,
 				09989EC21CC250AF00644C0A /* MySegmentController.m in Sources */,
 				090A819D1CC2A052002F6EE2 /* CCTabItem.m in Sources */,
-				09989EBF1CC2509400644C0A /* TestTableController.m in Sources */,
+				095F193F1CD1F9B000DFA6E7 /* TestTable.m in Sources */,
 				090A819C1CC2A052002F6EE2 /* CCTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

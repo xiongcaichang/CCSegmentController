@@ -1,35 +1,22 @@
 //
-//  TestTableController.m
+//  TestTable.m
 //  SegmentController
-//  URL: http://www.xiongcaichang.com
-//  Created by bear on 16/4/15.
+//
+//  Created by bear on 16/4/28.
 //  Copyright © 2016年 bear. All rights reserved.
 //
 
-#import "TestTableController.h"
+#import "TestTable.h"
+
 #import "UIColor+Extension.h"
 
-@interface TestTableController ()
-
-@end
-
-@implementation TestTableController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-
-    self.tableView.tableFooterView=[[UITableViewHeaderFooterView alloc]init];
-    self.tableView.showsVerticalScrollIndicator=NO;
-
-
-}
-
+@implementation TestTable
 
 
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
 
     return 15;
 }
@@ -51,7 +38,9 @@
 
     cell.textLabel.text=@"testLabel";
     cell.imageView.image=[self imageFromColor:[UIColor colors][arc4random()%8]];
-//    cell.backgroundColor=[UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];;
+
+    cell.backgroundColor= [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+
 
     return cell;
 }
@@ -70,5 +59,20 @@
     UIGraphicsEndImageContext();
     return img;
 }
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    TestTableController *tb1=[[TestTableController alloc]init];
+//    tb1.view.backgroundColor=[UIColor blackColor];
+
+
+//    NSLog(@"%@",self.navigationController);
+
+//    [self presentViewController:tb1 animated:YES completion:nil];
+
+
+//[self.navigationController pushViewController:tb1 animated:YES];
+}
+
 
 @end
