@@ -4,8 +4,7 @@
 
 > CCSegmentController  快速搭建  IOS  UI  主流框架   之仿   Android Viewpager
 
-	```objc
-   
+   ```objc
     self.titleArr = @[@"首页",@"小说",@"视频",@"旅游",@"文化"];
 
     TestTable  *tb1=[[TestTable  alloc]init];
@@ -16,10 +15,8 @@
 
 
     self.tableViewArr = @[tb1,tb2,tb3,tb4,tb5];
-    ```
-
-
-
+   ```
+   
 >  截图
 > 
 
