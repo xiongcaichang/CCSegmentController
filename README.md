@@ -4,7 +4,7 @@
 
 > CCSegmentController  快速搭建  IOS  UI  主流框架   之仿   Android Viewpager
 
-	```
+	```objc
    
     self.titleArr = @[@"首页",@"小说",@"视频",@"旅游",@"文化"];
 
