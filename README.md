@@ -1,11 +1,8 @@
 # CCSegmentController
 
 
-# CC NavTab
 
-
-
-> CCNavTab  快速搭建  IOS  UI  主流框架  
+> CCSegmentController  快速搭建  IOS  UI  主流框架   之仿   Android Viewpager
 
 	```
    
