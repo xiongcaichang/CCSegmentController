@@ -183,9 +183,6 @@ static NSString *ID=@"pager";
     UITableView *tableV = self.tableViewArr[indexPath.item];
 
 
-
-
-
     //判断是否有导航栏来确定内容的高度
     if (self.navigationController.navigationBar) {
 
